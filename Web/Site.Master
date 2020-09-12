@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %>- Prisma</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="#" rel="stylesheet" type="<asp:Image runat=" />
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/1456ce8540/UntitledProject/style.css">
+    <link href="main.css" rel="stylesheet" />
+    <link href="fonts.css" rel="stylesheet" />
+   
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <div class="social-bar">
+            <a href="https://www.facebook.com/" class="icon icon-facebook2" target="_blank"></a>
+            <a href="https://twitter.com/login?lang=es" class="icon icon-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
+            <a href="https://www.youtube.com/watch?v=PkHqUY82qU8" class="icon icon-youtube" target="_blank"></a>
+            <a href="https://www.blogger.com/about/?bpli=1" class="icon icon-blogger2" target="_blank"></a>
+
+
+        </div>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    
+                    
+                    <a class="navbar-brand" runat="server" href="~/">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Logo.png" Height="50px" Width="150px" /></a>
+
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><asp:LinkButton ID="LinkButton7" runat="server" PostBackUrl="~/Default.aspx">Inicio</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/About.aspx">Acerca de</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Contact.aspx">Contacto</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Servicios/Productos.aspx">Productos</asp:LinkButton>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <ul>
+                            <li> <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Servicios/Registrarse.aspx">Registrarse</asp:LinkButton></li>
+                            <li><asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Servicios/IniciarSesion.aspx">Iniciar Sesion</asp:LinkButton></li>
+                        </ul>
+              </div>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <asp:LinkButton ID="LinkButton6" runat="server">LinkButton</asp:LinkButton>         </asp:ContentPlaceHolder>
+                <hr />
+            <div class="footer">
+                
+                <p>&copy; <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>- PRISMA Litografia y Publicidad.-2020</p>
+                <table>
+                    <tr>
+                        <td>
+                            <h4>Publicidad Impresa</h4>
+                            <ul>
+                                <li><asp:HyperLink ID="HyperLink1" runat="server">Abanicos</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink2" runat="server">Adhesivo</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink3" runat="server">afiches</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink4" runat="server">Bolsas de Papel</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink5" runat="server">Calendarios</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink6" runat="server">Plegables</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink7" runat="server">Volantes</asp:HyperLink></li>
+                            </ul>
+
+                        </td>
+                        <td>
+                            <h4>Impresion Editorial</h4>
+                               <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink8" runat="server">Catalogo de Productos</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink9" runat="server">Libros</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink10" runat="server">Periodicos</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink11" runat="server">revistas</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink12" runat="server">Pleg</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink13" runat="server">Vola</asp:HyperLink></li>
+                            </ul>
+
+                        </td>
+                        <td>
+                            <h4>Gran Formato</h4>
+
+                            <ul>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink14" runat="server">Pendones</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink15" runat="server">Portapendones</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink16" runat="server">Adhesivo Vinilo</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink17" runat="server">Adhesivo MicroPerforado</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink18" runat="server">Calend</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink19" runat="server">Plegab</asp:HyperLink></li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink20" runat="server">Volant</asp:HyperLink></li>
+                            </ul>
+
+                        </td>
+                        <td>
+                            <h4>Servicios</h4>
+                            <ul>
+                                <li>Abanicos</li>
+                                <li>Adhesivos</li>
+                                <li>Afiches</li>
+                                <li>Bolsas de Papel</li>
+                                <li>Calendarios</li>
+                                <li>Plegables</li>
+                                <li>Volantes</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <h4>Acerca de</h4>
+                            <ul>
+                                <li>Abanicos</li>
+                                <li>Adhesivos</li>
+                                <li>Afiches</li>
+                                <li>Bolsas de Papel</li>
+                                <li>Calendarios</li>
+                                <li>Plegables</li>
+                                <li>Volantes</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <hr />
+                
+                
+            </div>
+
+           
+ </div>
+
+    </form>
+</body>
+</html>
